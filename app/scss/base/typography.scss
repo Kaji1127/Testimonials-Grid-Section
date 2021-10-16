@@ -1,3 +1,18 @@
+@use 'utility' as *;
+
 html {
 	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	font-family: var(--barlow);
+}
+
+.heading-secondary {
+	font-size: 1.3rem;
+}
+
+.heading-tertiary {
+	font-size: 2rem;
 }
