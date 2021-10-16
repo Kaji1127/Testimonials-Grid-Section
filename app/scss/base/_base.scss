@@ -1,0 +1,27 @@
+@use 'utility' as *;
+
+main {
+	display: grid;
+	align-content: center;
+	min-height: 100vh;
+	// padding: 7rem 0;
+	background-color: var(--grayishBlue);
+}
+
+.wrapper {
+	max-width: 32.7rem;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	align-content: center;
+
+	@include breakpoint(medium) {
+		max-width: 64rem;
+	}
+	@include breakpoint(large) {
+		max-width: 76rem;
+	}
+	@include breakpoint(xlarge) {
+		max-width: 110rem;
+	}
+}

@@ -1,0 +1,18 @@
+@use 'utility' as *;
+
+.grid {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	row-gap: 2.4rem;
+
+	@include breakpoint(xlarge) {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas:
+			'daniel daniel jonathan kira'
+			'jeanette patrick patrick kira';
+		row-gap: 2.4rem;
+		column-gap: 3rem;
+	}
+}
